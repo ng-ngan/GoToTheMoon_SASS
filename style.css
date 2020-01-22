@@ -1,0 +1,159 @@
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.footer {
+  background-image: url("resources/cloud_footer.png");
+  height: 100;
+  background-size: cover;
+}
+
+.header {
+  background-image: url("resources/header.jpg");
+  height: 500;
+  background-size: cover;
+}
+.header .header--nav {
+  height: 40px;
+  background-color: white;
+  opacity: 0.3;
+  z-index: 10;
+  display: flex;
+}
+.header .header--nav .header--nav--logo {
+  flex: 1;
+  justify-content: right;
+  display: flex;
+}
+.header .header--nav .header--nav--navigation {
+  flex: 1;
+  justify-content: right;
+}
+.header .header--nav .header--nav--navigation ul {
+  display: flex;
+}
+
+.section1 {
+  display: flex;
+  justify-content: space-around;
+}
+.section1 .section1--article {
+  background-color: #f2f2f2;
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+.section1 .section1--article img {
+  margin: 0 auto;
+  max-width: 150px;
+  max-height: 150px;
+  display: block;
+}
+.section1 .section1--article .section1--article--title {
+  font-weight: bold;
+}
+
+.section2 {
+  background-image: url("resources/barre_grise.png");
+  height: 150;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  margin: 1rem auto;
+  align-items: center;
+}
+.section2 .section2--title {
+  flex: 4;
+  font-weight: bolder;
+}
+.section2 .section2--content {
+  flex: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section2 .section2--content .section2--btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #19b8fa;
+  width: 250px;
+  height: 50px;
+  border-top: 1.5px solid #19b8fa;
+  border-left: 1.5px solid #19b8fa;
+  border-right: 1.5px solid #307ca6;
+  border-bottom: 1.5px solid #307ca6;
+  cursor: pointer;
+}
+.section2 .section2--content img {
+  height: 220px;
+  width: 200px;
+}
+
+.container34 {
+  width: 90%;
+  float: right;
+  margin: 0;
+}
+
+.section3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.section3 .section3--image {
+  flex: 1;
+  display: flex;
+}
+.section3 .section3--image img {
+  width: 300px;
+}
+.section3 .section3--content {
+  flex: 1;
+  flex-direction: column;
+  border: 1px solid black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.section4 .section4--container {
+  display: flex;
+}
+.section4 .section4--container .section4--articles {
+  flex: 6;
+}
+.section4 .section4--container .section4--articles .section4--article {
+  display: flex;
+}
+.section4 .section4--container .section4--articles .section4--article img {
+  flex: 1;
+}
+.section4 .section4--container .section4--articles .section4--article p {
+  flex: 8;
+}
+.section4 .section4--container .section4--form {
+  flex: 4;
+}
+.section4 .section4--container .section4--form .form {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+.section4 .section4--container .section4--form .form * {
+  margin: 0.4rem 0.6rem;
+}
+.section4 .section4--container .section4--form .btn {
+  margin: 0.4rem auto;
+  color: white;
+  background-color: #c0d0f6;
+  width: 60px;
+  padding: 0.2rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

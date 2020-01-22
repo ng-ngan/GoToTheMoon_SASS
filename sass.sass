@@ -1,0 +1,139 @@
+.container
+    max-width: 70%
+    margin: 0 auto
+
+
+$header-image: "resources/header.jpg"
+$section2-image: "resources/barre_grise.png"
+$footer-image: "resources/cloud_footer.png"
+
+
+
+=background-image($url,$height)
+  background-image: url($url)
+  height: $height
+  background-size: cover
+
+.footer 
+    +background-image($footer-image,100)
+
+.header
+    +background-image($header-image,500)
+    .header--nav
+        height: 40px
+        background-color: white
+        opacity: 0.3
+        z-index: 10
+        display: flex
+        .header--nav--logo
+            flex:1
+            justify-content: right
+            display: flex 
+        .header--nav--navigation
+            flex:1
+            justify-content: right
+            ul 
+                display: flex
+
+
+.section1
+    display: flex
+    justify-content: space-around
+    .section1--article
+        background-color: rgb(242,242,242)
+        max-width: 30%
+        display: flex
+        flex-direction: column
+        margin-top: 1rem 
+        text-align: center
+        padding: 0.5rem
+        img 
+            margin: 0 auto
+            max-width: 150px
+            max-height: 150px
+            display: block
+        .section1--article--title
+            font-weight: bold
+      
+.section2
+    +background-image($section2-image,150)
+    display: flex
+    text-align: center
+    margin: 1rem auto
+    align-items: center
+    .section2--title
+        flex: 4
+        font-weight: bolder
+    .section2--content
+        flex: 6
+        display: flex
+        align-items: center
+        justify-content: center
+        .section2--btn
+            display: flex            
+            align-items: center
+            justify-content: center
+            color: rgb(25,184,250)
+            width: 250px
+            height: 50px
+            border-top: 1.5px solid rgb(25,184,250)
+            border-left: 1.5px solid rgb(25,184,250)
+            border-right: 1.5px solid rgb(48,124,166)
+            border-bottom: 1.5px solid rgb(48,124,166)
+            cursor: pointer
+        img
+            height: 220px
+            width: 200px
+
+.container34 
+    width: 90%
+    float: right
+    margin: 0
+
+.section3
+    display: flex
+    justify-content: space-between
+    margin: 1rem 0
+    .section3--image
+        flex: 1
+        display: flex
+        img
+            width: 300px
+    .section3--content
+        flex: 1
+        flex-direction: column
+        border: 1px solid black
+        text-align: center
+        display: flex
+        align-items: center
+
+        
+.section4
+    .section4--container
+        display: flex
+        .section4--articles
+            flex: 6
+            .section4--article
+                display: flex
+                img
+                    flex:1
+                p
+                    flex: 8
+
+        .section4--form
+            flex: 4
+            .form
+                display: flex
+                flex-direction: column
+                background-color: rgb(242,242,242)
+                *
+                    margin: 0.4rem 0.6rem
+            .btn
+                margin: 0.4rem auto
+                color: white
+                background-color: rgb(192,208,246)
+                width: 60px
+                padding: 0.2rem
+                text-align: center
+
+
