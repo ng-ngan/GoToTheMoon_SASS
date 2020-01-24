@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SASS_01</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
 </head>
 <body >
     <div class="container">
@@ -13,7 +14,7 @@
                 <div class="header--nav--logo">
                     <img  src="resources/rocket_header.png" alt="rocket header">
                 </div>
-                <div class="header--nav-navigation">
+                <div class="header--nav--navigation">
                     <ul>
                         <li><img src="resources/home_logo.png" alt="home logo"></li>
                         <li><img src="resources/menu_logo.png" alt="menu logo"></li>
@@ -41,7 +42,7 @@
             </div>    
 
             <div class="section2">
-                    <p class="section2--title">Ready to go <br> to the Moon</p>
+                    <p class="section2--title hightlight">Ready to go <br> to the Moon</p>
                     <div class="section2--content">
                         <div class="section2--btn">TAKE THE TOUR</div>
                         <img src="resources/astronaut_barre.png" alt="astronaut barre">
@@ -54,13 +55,13 @@
                         <img src="resources/aliens.png" alt="aliens">
                     </div>
                     <div class="section3--content">
-                        <p>Explore & Learn</p>
-                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. <br>Aenean vitae rhoncus turpis. <br>Quisque quis mi a elit ornare sagittis. Vestibulum. </p>
+                        <p>Explore <span id="and">&</span> Learn</p>
+                        <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit. <br>Aenean vitae rhoncus turpis. <br>Quisque quis mi a elit ornare sagittis. </p>
                     </div>
                 </div>
     
                 <div class="section4">
-                    <p>Contactez nos super-héros</p>
+                    <p>Contactez nos <span class="hightlight">super-héros</span></p>
                     <div class="section4--container">
                         <div class="section4--articles">
                             <div class="section4--article">
@@ -72,19 +73,17 @@
                                 <p>"Qu'est qui fait le plus peur dans l'espace? On est entrainés à ne pas penser à la peur quand on est en mission spatiale. Il n'y a aucun bruit dans le vide, nos suels bruits sont ceux des machines. Et quand on les copue, ce silence-là fait peur..."</p>
                             </div>
                         </div>
-                        <div class="section4--form">
-                            <form action="">
+                        <form action="" class="section4--form">
                                 <div class="form">
-                                    <label for="flname">Nom Prénom</label>
-                                    <input type="text">
+                                    <label for="name">Nom Prénom</label>
+                                    <input type="text" name="name">
                                     <label for="email">Email</label>
-                                    <input type="text">
+                                    <input type="text" name="email">
                                     <label for="message">Message</label>
-                                    <input type="text">
+                                    <textarea name="message"></textarea>
                                 </div>
-                                <div class="btn">Envoyer</button>
+                                <input type="submit" class="btn" value="Envoyer">
                             </form>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -92,7 +91,7 @@
 
         </div>
         <div class ="footer">
-            <div class="footer--nav">©️ 2018, <a href="">GototheMoon</a> Built with love</div>
+            <div class="footer--nav">©️ 2018,&nbsp;<a href=""> GototheMoon</a>&nbsp;Built with love</div>
         </div>    
     </div>     
 </body>
